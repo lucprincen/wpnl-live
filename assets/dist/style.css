@@ -6,6 +6,7 @@
 
 body{
     background: white;
+    overflow-x: hidden;
 }
 
 
@@ -32,6 +33,18 @@ main{
     padding: 30px;
     font-size: 2.5rem;
     font-weight: bold;
+    position: relative;
+}
+
+main::after{
+    content: '';
+    width: 150vw;
+    position: absolute;
+    top: 50px;
+    height: 3px;
+    background: black;
+    left: -25vw;
+    z-index: -1;
 }
 
 .logo{
