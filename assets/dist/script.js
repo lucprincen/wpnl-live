@@ -2,6 +2,7 @@
 //array of circles
 let circles = new Array;
 let lines = new Array;
+let squares = new Array;
 let circleXReset = 0;
 
 //canvas bounds
@@ -46,7 +47,6 @@ function init() {
     g.beginFill( GREEN );
     g.drawCircle(0, 0, CIRCLE_RADIUS);
 
-    let squares = new Array;
     for( let i = 1; i <= CLUSTERS; i++ ){
         let gridX = ((CANVAS_WIDTH / CLUSTERS) / 2);
         let _x = i * gridX + ( ( i - 1 ) * gridX ); //halfway on grid
@@ -66,42 +66,43 @@ function init() {
         circles.push(circle);
     }
 
-    //draw lines:
-    drawLines();
+    drawEverything();
+    
 
-    //add circles:
-    for( var i = 0; i < circles.length; i++ ){
-        stage.addChild( circles[i] );
-    }
-
-
-    //tell the stage to render to the canvas
-    stage.update();
-
-    createjs.Ticker.setFPS(24);
+    createjs.Ticker.setFPS(1);
 
     //Subscribe to the Tick class. This will call the tick
     //method at a set interval (similar to ENTER_FRAME with
     //the Flash Player)
-    //createjs.Ticker.addEventListener("tick", handleTick);
+    createjs.Ticker.addEventListener("tick", handleTick);
+}
+
+function drawEverything(){
+    //draw lines:
+    drawLines();
+
+    //add circles:
+    for (var i = 0; i < circles.length; i++) {
+        stage.addChild(circles[i]);
+    }
+
+    //re-render the stage
+    stage.update();
 }
 
 //function called by the Tick instance at a set interval
 function handleTick() {
+
+
     //check and see if the Shape has gone of the right
     //of the stage.
     for( var i = 0; i < circles.length ; i++){
-
-        
-
+        stage.removeChild( circles[i]);
+        circles[i].x = _x = (Math.random() * (Math.floor(DEVIATION) - NEG)) + squares[i][0];
+        circles[i].y = _y = (Math.random() * (Math.floor(DEVIATION) - NEG)) + squares[i][1];
     }
-    
 
-    //move the circle over 10 pixels
-    circles.x += 10;
-
-    //re-render the stage
-    stage.update();
+    drawEverything();
 }
 
 function drawLines(){
