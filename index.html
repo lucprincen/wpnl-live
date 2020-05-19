@@ -17,8 +17,81 @@
         <img src="assets/dist/logo.svg" alt="WPNL Live Logo" class="logo" />
     </header>
     <main role="main">
-        <p>Houd deze website in de gaten voor meer info!</p>
+        <section class="intro">
+            <h1>Join us on Thursday, May 28th!</h1>
+            <p>We're kicking off our first WPNL Live in style with two 
+                fantastic speakers! <a href="#karin">Karin Winters</a> and <a href="#pavel">Pavel Ciorici</a>
+                will be taking our digital stage starting at 3PM!
+            </p>
+            <p></p>
+        </section>
+        <section class="form">
+            <p>Our lightning talks will start at 3PM in <strong>Zoom</strong>.</p>
+            <p>To make sure you get to join the conversation, please sign up here!</p>
+            <form class="tinyletter" style="border:1px solid #ccc;text-align:center;"
+                action="https://tinyletter.com/wcnl" method="post" target="popupwindow"
+                onsubmit="window.open('https://tinyletter.com/wcnl', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
+                <label for="tlemail">Signup for WPNL Live!</label>
+                <div class="field-wrap">
+                    <input type="text" placeholder="email@example.com" name="email" id="tlemail" />
+                    <input type="hidden" value="1" name="embed" />
+                    <input type="submit" value="Subscribe" id="tlesubmit" />
+                </div>
+                <small>(<strong>Bonus:</strong> all of our seats are in the front-row!)</small>
+
+            </form>
+        </section>
+        <section class="schedule">
+            <h2 class="huge left">Schedule<span class="dot"></span></h2>
+            <ul>
+                <li><time>🕰 15.00</time> Kickoff by our MC <strong>Bas van der Lans</strong></li>
+                <li><time>⏰ 15.10</time> Pavel Ciorici</li>
+                <li><time>⏱ 15.40</time> Karin Winters</li>
+                <li><time>🥤 16.00</time> Drinks & Digital Socializing</li>
+            </ul>
+        </section>
+        <section class="speakers">
+            <h2 class="huge">Our Speakers<span class="dot"></span></h2>
+            
+            <article id="pavel">
+                <img src="assets/dist/pavel.jpg" class="avatar">
+                <div class="card">
+                    <h3>Pavel Ciorici</h3>
+                    <a class="title" href="https://www.wpzoom.com/">Owner of WPZoom</a>
+<!--         <p>Lorem ipsum...</p>-->
+                </div>
+            </article>
+            <article id="karin" class="pic-right">
+                <div class="card">
+                    <h3>Karin Winters</h3>
+                    <a class="title" href="https://spelenmetboeken.nl/">Owner of LearningROCKS</a>
+                </div>
+                <img src="assets/dist/karin.jpg" class="avatar">
+            </article>
+
+
+        </section>
+        <section class="sponsors">
+            <h2 class="huge">Our Sponsor<span class="dot"></span></h2>
+            <p>Thanks to <a href="https://yoast.com">Yoast</a>, WordPress Nederland is able to organize these digital meetups! 🎉</p>
+            <a href="https://yoast.com" class="sponsor"><img src="assets/dist/yoast.svg"/></a>
+        </section>
         
+        <section class="form last">
+            <p>Make sure you <strong>aren't missing anything</strong> and <strong>sign up now!</strong></p>
+            <form class="tinyletter" style="border:1px solid #ccc;text-align:center;" action="https://tinyletter.com/wcnl"
+                method="post" target="popupwindow"
+                onsubmit="window.open('https://tinyletter.com/wcnl', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
+                <label for="tlemail">Signup for WPNL Live!</label>
+                <div class="field-wrap">
+                    <input type="text" placeholder="email@example.com" name="email" id="tlemail" />
+                    <input type="hidden" value="1" name="embed" />
+                    <input type="submit" value="Subscribe" id="tlesubmit" />
+                </div>
+                <small>(<strong>Bonus:</strong> all of our seats are in the front-row!)</small>
+            
+            </form>
+        </section>
     </main>    
 
 </body>

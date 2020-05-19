@@ -2,12 +2,26 @@
     font-family: sans-serif;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 14px;
+
+}
+
+
+@media only screen and (min-width: 600px){
+    html{
+        font-size: 16px;
+    }
 }
 
 body{
     background: white;
     overflow-x: hidden;
 }
+
 
 
 h1{
@@ -24,16 +38,22 @@ header{
 }
 
 main{
-    width: 90%;
-    max-width: 900px;
-    margin: 0 auto;
-    background: #00FF97;
     display: block;
-    text-align: center;
-    padding: 30px;
-    font-size: 2.5rem;
-    font-weight: bold;
     position: relative;
+    line-height: 150%;
+}
+
+main a{
+    color: black;
+    text-decoration: underline;
+    font-weight: bold;
+    display: inline-block;
+    padding: 3px;
+}
+
+main a:hover, main a:focus{
+    background: black;
+    color: white;
 }
 
 main::after{
@@ -45,6 +65,44 @@ main::after{
     background: black;
     left: -25vw;
     z-index: -1;
+}
+
+main > section{
+    max-width: 900px;
+    margin: 0 auto;
+
+}
+
+.intro{
+    background: #00FF97;
+    width: 100%;
+    padding: 30px;
+    
+}
+
+.intro h1{
+    margin: 0 0 30px 0;
+    padding: 0;
+    text-align: center;
+    font-size: 2.6rem;
+    line-height: 130%;
+}
+
+.intro p{
+    font-weight: normal;
+    font-size: 1.2rem;
+    padding: 0;
+}
+
+@media only screen and (min-width: 500px ){
+    .intro p{
+        padding: 0 50px;
+    }
+}
+
+.intro a{
+    color: black;
+    font-weight: bold;
 }
 
 .logo{
@@ -77,5 +135,299 @@ canvas{
     left: 0;
     right: 0;
     bottom: 0;
+}
 
+@media only screen and ( prefers-reduced-motion: reduce ){
+    canvas{
+        display: none;
+    }
+}
+
+.form {
+    background: #FFFFFF;
+    padding: 45px 0;
+}
+
+.form p{
+    text-align: center;
+    font-size: 1.3rem;
+    line-height: 130%;
+}
+
+.tinyletter {
+    width: 95%;
+    max-width: 650px;
+    margin: 40px auto;
+    padding: 19px 15px 40px 19px;
+    display: block;
+    box-sizing: border-box;
+    position: relative;
+    text-align: left;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0 5px 27px rgba(0, 0, 0, .2);
+    line-height: 150%;
+    border: 0 !important;
+}
+
+#tlemail {
+    display: block;
+    margin: 0 10px 0 0;
+    min-width: 200px;
+    padding: 12px 10px 11px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    box-shadow: none;
+}
+
+.tinyletter label {
+    font-size: 1.6em;
+    margin-bottom: 13px;
+    font-weight: 600;
+    width: 100%;
+    text-align: left;  
+    display: block; 
+}
+
+.tinyletter .field-wrap{
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.tinyletter .field-wrap > *{
+    flex: 1; 
+    width: 100%;
+}
+
+@media only screen and (min-width: 600px){
+    .tinyletter .field-wrap{
+        flex-flow: row nowrap;
+    }
+
+    .tinyletter .field-wrap #tlemail{
+        flex: 2;
+    }
+}
+
+#tlesubmit {
+    margin: 0;
+    min-width: 75px;
+    color: #FFFFFF;
+    background-color: #000000;
+    display: inline-block;
+    white-space: nowrap;
+    height: 40px;
+    line-height: 42px;
+    padding: 0 22px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    cursor: pointer;
+    border: 0;
+    border-radius: 4px;
+}
+#tlesubmit:hover {
+    color: #000000;
+    background-color: #00FF97;
+}
+
+.tinyletter small{
+    font-size: .8rem;
+    width: 100%;
+    display: block;
+    clear: both;
+    margin: 5px 0 -20px 0;
+}
+
+.schedule{
+    margin: 0 auto;
+    border-bottom: 10px solid #000;
+}
+
+.schedule ul{
+    list-style: none;
+    font-size: 1.3rem;
+    line-height: 130%;
+    padding-bottom: 30px;
+}
+
+@media only screen and (min-width: 600px){
+    .schedule ul{
+        font-size: 2rem;
+        line-height: 150%;
+    }
+}
+
+.speakers{
+    border-bottom: 10px solid #eee;
+}
+
+.speakers, .sponsors{
+    max-width: 100%;
+    width: 100%;
+    padding-bottom: 40px;
+    margin: 80px 0px 40px 0px;
+    box-sizing: border-box;
+}
+
+.dot{
+    width: 20px;
+    height: 20px;
+    border: 2px solid black;
+    background: #00FF97;
+    display: inline-block;
+    vertical-align: baseline;
+    border-radius: 20px;
+    margin: 0 0 -5px -15px;
+}
+
+h2.huge{
+    font-size: 4rem;
+    grid-column: 4;
+    display: block;
+    width: 100%;
+    text-align: right;
+    margin: 0 0 50px 0;
+    line-height: 110%;
+}
+
+@media only screen and (min-width: 750px){
+    h2.huge{
+        font-size: 7rem;
+    }
+}
+
+h2.huge.left{
+    text-align: left;
+}
+
+.sponsors{
+    margin-top: 140px;
+}
+
+.speakers article{
+    display: flex;
+    flex-flow: column nowrap;
+    max-width: 800px;
+    margin: 0 auto 30px auto;
+    align-items: center;
+}
+
+.speakers article .avatar{
+    order: -1;
+}
+
+@media only screen and (min-width: 630px ){
+    .speakers article{
+        flex-flow: row nowrap;
+        margin-bottom: 0;
+    }
+
+    .speakers article .avatar{
+        order: 0;
+    }
+}
+
+.speakers article .card{
+    flex: 2;
+    background: #00FF97;
+    padding: 30px;
+    position: relative;
+    text-align: right;
+}
+
+.speakers article .card h3{
+    font-size: 3rem;
+    padding: 0 0 15px 0;
+    line-height: 120%;
+}
+
+.speakers article .card a.title{
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    display: inline-block;
+    color: black;
+}
+
+.speakers article .card a.title:hover{
+    color: white;
+}
+
+.speakers article .card:after{
+    content: '';
+    width: 30px;
+    height: 30px;
+    border-radius: 40px;
+    background: #00FF97;
+    border: 15px solid white;
+    position: absolute;
+    bottom: -25px;
+    right: -25px;
+}
+
+.speakers article.pic-right .card:after{
+    right: auto;
+    left: -25px;
+}
+
+
+
+.avatar{
+    width: 280px;
+    height: 280px;
+    border-radius: 160px;
+    border: 10px solid white;
+    box-shadow: 0 5px 27px rgba(0, 0, 0, .2);
+    z-index: 10;
+    margin: 20px;
+}
+
+.sponsors p{
+    display: block;
+    font-size: 1.3rem;
+    text-align: right;
+    padding: 20px 50px;
+}
+
+.sponsors {
+    text-align: center;
+}
+
+.sponsor{
+    width: 200px;
+    background: white;
+    box-shadow: 0 5px 27px rgba(0, 0, 0, .2);
+    padding: 20px;
+    box-sizing: border-box;
+    display: inline-block;
+    border-radius: 10px;
+    margin-top: 15px;
+    transition: all ease .3s;
+}
+
+.sponsor:hover{
+    box-shadow: 0 5px 27px rgba(0, 0, 0, .4);
+    transform: translateY(-10px) rotate( -4deg );
+    background: white;
+}
+
+@media only screen and ( prefers-reduced-motion: reduce ){
+    .sponsor{
+        transition: none;
+    }
+}
+
+.sponsor img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    
+}
+
+.form.last{
+    background: #00FF97;
+    width: 100%;
+    max-width: initial;
+    min-height: 40vh;
 }
