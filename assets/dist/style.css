@@ -132,7 +132,6 @@ canvas{
         opacity: 1;
         margin-left: -500px;
         left: 50%;
-
     }
     .canvas-container::after{
         content: '';
@@ -259,7 +258,8 @@ canvas{
     list-style: none;
     font-size: 1.3rem;
     line-height: 130%;
-    padding-bottom: 30px;
+    padding: 0 15px 30px 15px;
+
 }
 
 @media only screen and (min-width: 600px){
@@ -289,11 +289,12 @@ canvas{
     display: inline-block;
     vertical-align: baseline;
     border-radius: 20px;
-    margin: 0 0 -5px -15px;
+    margin: 0 0 -3px -8px;
 }
 
+
 h2.huge{
-    font-size: 4rem;
+    font-size: 3.8rem;
     grid-column: 4;
     display: block;
     width: 100%;
@@ -303,6 +304,9 @@ h2.huge{
 }
 
 @media only screen and (min-width: 750px){
+    .dot{
+        margin: 0 0 -5px -15px;
+    }
     h2.huge{
         font-size: 7rem;
     }
