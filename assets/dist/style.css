@@ -324,8 +324,8 @@ h2.huge.left{
     display: flex;
     flex-flow: column nowrap;
     max-width: 800px;
-    margin: 0 auto 30px auto;
-    align-items: center;
+    margin: 0 auto 50px auto;
+    align-items: flex-start;
 }
 
 .speakers article .avatar{
@@ -335,7 +335,6 @@ h2.huge.left{
 @media only screen and (min-width: 630px ){
     .speakers article{
         flex-flow: row nowrap;
-        margin-bottom: 0;
     }
 
     .speakers article .avatar{
@@ -357,11 +356,18 @@ h2.huge.left{
     line-height: 120%;
 }
 
-.speakers article .card a.title{
+.speakers article .card strong{
+    padding-top: 20px;
+    display: block;
+}
+
+.speakers article .card .title{
     font-size: 1.5rem;
     margin-bottom: 15px;
     display: inline-block;
     color: black;
+    font-style: italic;
+    line-height: 120%;
 }
 
 .speakers article .card a.title:hover{
