@@ -1,0 +1,19 @@
+header
+    a.logo(href="/" title="Home")
+        +icon('logo')
+
+    nav.menu-container
+        ul.main-menu 
+            li 
+                a(href="/") Home
+            li
+                a(href="/editions/") Editions
+            li
+                a(href="/code-of-conduct/") Code of Conduct  
+        button.toggle-menu
+            span.open
+                +icon('menu')
+                span MENU
+            span.close
+                +icon('close')
+                span CLOSE

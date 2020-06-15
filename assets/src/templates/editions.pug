@@ -1,0 +1,54 @@
+extends layouts/layout.pug
+
+//- Head
+block head
+    title WPNL Live - Editions
+
+//- Main content:
+block content
+
+    section.intro
+        h1 Editions
+        p You'll find an overview of all past and future editions of WPNL Live
+
+    section.schedule
+        h2.huge.left Agenda
+            span.dot
+
+        ul
+            li
+                span 🗓
+                span June 25th
+            li
+                span 🗓
+                span July 30th
+            li
+                span 🗓
+                span September 24th
+    
+    section.speakers
+        h2.huge Previous editions    
+            span.dot
+
+
+        .title-break
+            h2 Sessions - May 28th
+
+        article#pavel
+            img( src="/assets/dist/images/pavel.jpg").avatar
+            .card
+                h3 Pavel Ciorici
+                h4.title "When it's the right time to raise prices and how to keep your customers happy" (EN)
+                a(href="https://www.youtube.com/watch?v=yXI4hIKU-W0").button.
+                    Watch Pavel's talk
+
+        article#karin.pic-right
+            img( src="/assets/dist/images/karin.jpg").avatar
+            .card
+                h3 Karin Winters
+                h4.title Juist NU succes met een eigen LMS. (LeerManagementSysteem) (NL)
+                a(href="https://www.youtube.com/watch?v=Oby3G_9zu0I").button.
+                    Watch Karin's talk
+
+
+            

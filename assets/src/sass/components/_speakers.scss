@@ -25,6 +25,23 @@
         .avatar{
             order: 0;
         }
+
+        &.pic-right .avatar{
+            order: 1;
+        }
+    }
+
+    .button{
+        background: black;
+        color: $mint;
+        font-size: 1.2rem;
+        padding: 10px 18px;
+        margin: 10px auto 0 auto;
+
+        &:hover{
+            background: white;
+            color: black;
+        }
     }
 
 }

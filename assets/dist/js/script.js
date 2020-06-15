@@ -75,6 +75,14 @@ function init() {
     //method at a set interval (similar to ENTER_FRAME with
     //the Flash Player)
     createjs.Ticker.addEventListener("tick", handleTick);
+
+
+    //menu:
+    var btn = document.querySelector(".toggle-menu");
+    btn.onclick = function( e ){
+        var menu = document.querySelector(".menu-container")
+        menu.classList.toggle('active');
+    }
 }
 
 function drawEverything(){

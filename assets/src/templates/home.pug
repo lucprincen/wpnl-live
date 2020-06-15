@@ -1,0 +1,28 @@
+extends layouts/layout.pug
+
+//- Head
+block head
+    title WPNL Live
+
+//- Main content:
+block content
+
+    section.intro
+        h1 Join us on Thursday, June 25th!
+        p Our second WPNL Live. Again, two fantastic speakers will be taking our digital stage starting at 3PM!
+
+    section.form
+        p Our lightning talks will start at 3PM in <strong>Zoom</strong>.
+        p To make sure you get to join the conversation, please sign up here!
+        include elements/form.pug
+
+
+    include elements/speakers.pug
+    
+    section.sponsors
+        h2.huge Our Sponsor
+            span.dot
+
+        p Thanks to <a href="https://yoast.com">Yoast</a>, WordPress Nederland is able to organize these digital meetups! 🎉
+        a(href="https://yoast.com").sponsor
+            +icon('yoast')

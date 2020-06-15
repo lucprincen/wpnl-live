@@ -1,0 +1,25 @@
+include ../_mixins
+
+doctype html
+html
+    head
+        block head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        link(rel="stylesheet" media="screen" href="/assets/dist/css/main.css")
+    body
+        include ../elements/canvas.pug
+        include ../elements/header.pug
+        main(role="main")
+    
+            block content
+    
+        section.form.last
+            p Make sure you <strong>aren't missing anything</strong> and <strong>sign up now!</strong>
+            include ../elements/form.pug
+        
+        include ../elements/footer.pug
+
+        script(src="/assets/dist/js/easel.min.js")
+        script(src="/assets/dist/js/script.js")

@@ -36,5 +36,30 @@ h2.huge{
     }
     h2.huge{
         font-size: 7rem;
+        padding-right: 30px;
+    }
+}
+
+.title-break{
+    font-size: 2rem;
+    text-align: center;
+    display: block;
+    margin-bottom: 30px;
+
+    &:after{
+        position: relative;
+        content: '';
+        background: white;
+        display: block;
+        height: 30px;
+        border-top: 4px solid black;
+        z-index: 20;
+    }
+}
+
+.code-of-conduct{
+    padding-bottom: 60px;
+    h3, .title-break{
+        margin-top: 30px;
     }
 }

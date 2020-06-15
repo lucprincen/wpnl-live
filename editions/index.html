@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>WPNL Live - Editions</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" media="screen" href="/assets/dist/css/main.css">
+</head>
+
+<body>
+	<div class="canvas-container">
+		<canvas id="bg" width="1000" height="600"></canvas>
+	</div>
+	<header>
+		<a class="logo" href="/" title="Home">
+			<img src="/assets/dist/images/logo.svg" />
+		</a>
+		<nav class="menu-container">
+			<ul class="main-menu">
+				<li> <a href="/">Home</a>
+				</li>
+				<li><a href="/editions/">Editions</a>
+				</li>
+				<li><a href="/code-of-conduct/">Code of Conduct  </a>
+				</li>
+			</ul>
+			<button class="toggle-menu"><span class="open"><img src="/assets/dist/images/menu.svg"/><span>MENU</span></span><span class="close"><img src="/assets/dist/images/close.svg"/><span>CLOSE</span></span>
+			</button>
+		</nav>
+	</header>
+	<main role="main">
+		<section class="intro">
+			<h1>Editions</h1>
+			<p>You'll find an overview of all past and future editions of WPNL Live</p>
+		</section>
+		<section class="schedule">
+			<h2 class="huge left">Agenda<span class="dot"></span></h2>
+			<ul>
+				<li><span>🗓</span><span>June 25th</span>
+				</li>
+				<li><span>🗓</span><span>July 30th</span>
+				</li>
+				<li><span>🗓</span><span>September 24th</span>
+				</li>
+			</ul>
+		</section>
+		<section class="speakers">
+			<h2 class="huge">Previous editions    <span class="dot"></span></h2>
+			<div class="title-break">
+				<h2>Sessions - May 28th</h2>
+			</div>
+			<article id="pavel">
+				<img class="avatar" src="/assets/dist/images/pavel.jpg">
+				<div class="card">
+					<h3>Pavel Ciorici</h3>
+					<h4 class="title">"When it's the right time to raise prices and how to keep your customers happy" (EN)</h4><a class="button" href="https://www.youtube.com/watch?v=yXI4hIKU-W0">
+              Watch Pavel's talk
+              </a>
+				</div>
+			</article>
+			<article class="pic-right" id="karin">
+				<img class="avatar" src="/assets/dist/images/karin.jpg">
+				<div class="card">
+					<h3>Karin Winters</h3>
+					<h4 class="title">Juist NU succes met een eigen LMS. (LeerManagementSysteem) (NL)</h4><a class="button" href="https://www.youtube.com/watch?v=Oby3G_9zu0I">Watch Karin's talk</a>
+				</div>
+			</article>
+		</section>
+	</main>
+	<section class="form last">
+		<p>Make sure you <strong>aren't missing anything</strong> and <strong>sign up now!</strong>
+		</p>
+		<form class="tinyletter" action="https://tinyletter.com/wcnl" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/wcnl', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
+			<label for="tlemail">Signup for WPNL Live!</label>
+			<div class="field-wrap">
+				<input type="text" placeholder="email@example.com" name="email" id="tlemail">
+				<input type="hidden" value="1" name="embed">
+				<input type="submit" value="Subscribe" id="tlesubmit">
+			</div><small>(<strong>Bonus:</strong>) all of our seats are in the front row!)</small>
+		</form>
+	</section>
+	<script src="/assets/dist/js/easel.min.js"></script>
+	<script src="/assets/dist/js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,9 @@
+//- Icon:
+mixin icon(name)
+    img(src="/assets/dist/images/"+name+".svg")
+
+mixin slug(name)
+    return name.toLowerCase().replace(' ', '-')
+
+mixin link(name, url)
+    a(href=url title=name) #{name}

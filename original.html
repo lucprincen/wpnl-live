@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WPNL Live</title>
+    <script type="text/javascript" src="assets/dist/js/easel.min.js"></script>
+    <script type="text/javascript" src="assets/dist/js/script.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/dist/css/main.css"/>
+</head>
+<body>
+    
+    <div class="canvas-container">
+        <canvas id="bg" width="1000" height="600"></canvas>
+    </div>
+    <header>
+        <img src="assets/dist/images/logo.svg" alt="WPNL Live Logo" class="logo" />
+    </header>
+    <main role="main">
+        <section class="intro">
+            <h1>Join us on Thursday, June 25th!</h1>
+            <p>Our second WPNL Live. Again, two fantastic speakers will be taking our digital stage starting at 3PM!</p>
+        </section>
+        <section class="form">
+            <p>Our lightning talks will start at 3PM in <strong>Zoom</strong>.</p>
+            <p>To make sure you get to join the conversation, please sign up here!</p>
+            <form class="tinyletter" style="border:1px solid #ccc;text-align:center;"
+                action="https://tinyletter.com/wcnl" method="post" target="popupwindow"
+                onsubmit="window.open('https://tinyletter.com/wcnl', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
+                <label for="tlemail">Signup for WPNL Live!</label>
+                <div class="field-wrap">
+                    <input type="text" placeholder="email@example.com" name="email" id="tlemail" />
+                    <input type="hidden" value="1" name="embed" />
+                    <input type="submit" value="Subscribe" id="tlesubmit" />
+                </div>
+                <small>(<strong>Bonus:</strong> all of our seats are in the front-row!)</small>
+
+            </form>
+        </section>
+        <!--<section class="schedule">
+            <h2 class="huge left">Schedule<span class="dot"></span></h2>
+            <ul>
+                <li><time>🕰 15.00</time> Kickoff by our MC <strong>Bas van der Lans</strong></li>
+                <li><time>⏰ 15.10</time> Pavel Ciorici</li>
+                <li><time>⏱ 15.40</time> Karin Winters</li>
+                <li><time>🥤 16.00</time> Drinks & Digital Socializing</li>
+            </ul>
+        </section>
+        <section class="speakers">
+            <h2 class="huge">Our Speakers<span class="dot"></span></h2>
+            
+            <article id="pavel">
+                <img src="assets/dist/images/pavel.jpg" class="avatar">
+                <div class="card">
+                    <h3>Pavel Ciorici</h3>
+                    <h4 class="title">"When it's the right time to raise prices and how to keep your customers happy" (EN)</h4>
+                    <p>It's no secret that WordPress puts food on the table for many of us. Some of us sell products for WordPress like themes
+                    or plugins, others provide services and custom work, but are doing a good job at valuing our work accordingly and
+                    charging our customers enough? I will provide some results of different techniques we tried at WPZOOM over the years in
+                    order to make sure we're charging everyone enough and what we're doing currently to keep our customers happy and loyal
+                    to our products.</p>
+
+                    <strong>About Pavel:</strong>
+                    <p>In 2008 I've founded <a href="https://www.wpzoom.com/">WPZOOM</a>, a company with a focus on Premium Themes & Plugins for WordPress. Our products are used by
+                    more than 80.000 customers around the world. I'm originally from Republic of Moldova, but 2.5 years ago I've moved to the Netherlands and together with this I also
+                    reincorporated my company here.</p>
+                    
+                    <p>You can <a href="https://twitter.com/ciorici">follow me on Twitter.</a></p>
+
+                </div>
+            </article>
+            <article id="karin" class="pic-right">
+                <div class="card">
+                    <h3>Karin Winters</h3>
+                    <h4 class="title">Juist NU succes met een eigen LMS. (LeerManagementSysteem) (NL)</h4>
+                    <p>Waarom zou je heel veel investeren in dure LMS systemen waarbij het lang duurt om deze uit te rollen, als je WordPress
+                    ter beschikking hebt? Juist in deze tijd zou het fantastisch zijn om mensen zich te laten ontwikkelen in een online
+                    leeromgeving.</p>
+                    <p>Belangrijk daarbij zijn de ontwerpkeuzes van de inhoud, daar ligt te kracht van succesvol online leren.
+                    Veel websites, vooral van kleine en middelgrote organisaties zijn ontwikkeld in WordPress.
+                    Dat betekent vooral dat gebruikers het dashboard al kennen. Het is zelfs mogelijk om aan de eigen website vast een LMS
+                    te maken (maar voor ons natuurlijk minder aantrekkelijk)</p>
+                    <p>Wij hebben gekozen voor LearnDash om dat te realiseren.</p>
+                    
+                    <p>In neem je in vogelvlucht mee in onze omgevingen en ik laat zien welke keuzes we gemaakt hebben.
+                    Bijvoorbeeld: Welke plugins wij gebruiken (naast de standaard must haves), waarom en hoe wij open badges gebruiken.
+                    Maar vooral laat ik zien wat de kracht is van korte (micro)modules en waarom eigenlijk blended leren (dus face to face
+                    en online gecombineerd) het meest krachtig is.</p>
+                    <strong>Over Karin:</strong>
+                    <p>Karin is vennoot van <a href="https://www.learningrocks.nl/">LearningROCKS</a>, Master of Education for learning and development. LevenlangLeren en Netwerker.</p>
+
+                    <p>Met learningROCKS timmeren we sinds twee jaar aan de weg met het ontwikkelen van online academies. We hebben drie eigen
+                    omgevingen waarin we modules aanbieden.
+                    De leerlijnICT om docenten door middel van korte (micro)modules digitaal geletterder te maken en de twee andere
+                    omgevingen gebruiken we voor maatwerk modules (AVG).
+                    In opdracht van kleine en grotere organisaties hebben we inmiddels meerdere omgevingen gebouwd.
+                    Onze kracht zit in de combinatie van inhoudelijke kennis, kennis van online leren en ontwikkelen en de kennis en
+                    ervaring die we inmiddels hebben met LearnDash en WordPress.</p>
+
+                    <p>Je vind Karin op <a href="https://www.karinwinters.nl">karinwinters.nl</a></p>
+                </div>
+                <img src="assets/dist/images/karin.jpg" class="avatar">
+            </article>
+
+
+        </section>-->
+        <section class="sponsors">
+            <h2 class="huge">Our Sponsor<span class="dot"></span></h2>
+            <p>Thanks to <a href="https://yoast.com">Yoast</a>, WordPress Nederland is able to organize these digital meetups! 🎉</p>
+            <a href="https://yoast.com" class="sponsor"><img src="assets/dist/images/yoast.svg"/></a>
+        </section>
+        
+        
+    </main>    
+
+</body>
+</html>

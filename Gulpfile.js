@@ -6,10 +6,11 @@ const gulp = require('gulp'),
     sass = require('gulp-sass'),
     pug = require('gulp-pug'),
     htmlprettify = require('gulp-html-prettify'),
-    autoprefixer = require('gulp-autoprefixer');
+    autoprefixer = require('gulp-autoprefixer'),
+    rename = require("gulp-rename");
 
 /* pathConfig*/
-const pugWatchPath = './templates/**/*.pug',
+const pugWatchPath = './assets/src/templates/**/*.pug',
     sassWatchPath = './assets/src/sass/**/*.scss';
     
 gulp.task('sass', function () {
@@ -22,9 +23,16 @@ gulp.task('sass', function () {
 });
 
 gulp.task('pug', function () {
-    return gulp.src('templates/!(_)*.pug')
+    return gulp.src('assets/src/templates/!(_)*.pug')
         .pipe(pug({ pretty: true }))
         .pipe(htmlprettify({ 'indent_char': '\t', 'indent_size': 1, 'preserve-newlines': true }))
+        .pipe(rename(function (path) {
+            // Render each page in their own folder:
+            if( path.basename != 'home' ){
+                path.dirname = "/"+ path.basename;
+            }
+            path.basename = "index";
+        }))
         .pipe(gulp.dest('./'));
 });
 

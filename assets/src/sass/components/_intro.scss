@@ -2,6 +2,11 @@
     background: $mint;
     width: 100%;
     padding: 30px;
+
+    &.title{
+        padding-bottom: 1px;
+        margin-bottom: 30px;
+    }
     
     h1{
         margin: 0 0 30px 0;
