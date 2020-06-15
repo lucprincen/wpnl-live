@@ -1,0 +1,19 @@
+.schedule{
+    margin: 0 auto;
+    border-bottom: 10px solid #000;
+}
+
+.schedule ul{
+    list-style: none;
+    font-size: 1.3rem;
+    line-height: 130%;
+    padding: 0 15px 30px 15px;
+
+}
+
+@media only screen and (min-width: 600px){
+    .schedule ul{
+        font-size: 2rem;
+        line-height: 150%;
+    }
+}

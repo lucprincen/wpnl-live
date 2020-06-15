@@ -1,0 +1,40 @@
+.speakers{
+    border-bottom: 10px solid #eee;
+}
+
+.speakers article{
+    display: flex;
+    flex-flow: column nowrap;
+    max-width: 800px;
+    margin: 0 auto 50px auto;
+    align-items: flex-start;
+
+    .avatar{
+        order: -1;
+    }
+
+    &.pic-right .card:after{
+        right: auto;
+        left: -25px;
+    }
+
+    
+    @media only screen and (min-width: 630px ){
+        flex-flow: row nowrap;
+        
+        .avatar{
+            order: 0;
+        }
+    }
+
+}
+
+.avatar{
+    width: 280px;
+    height: 280px;
+    border-radius: 160px;
+    border: 10px solid white;
+    box-shadow: 0 5px 27px rgba(0, 0, 0, .2);
+    z-index: 10;
+    margin: 20px;
+}

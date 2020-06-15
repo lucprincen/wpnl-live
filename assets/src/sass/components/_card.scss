@@ -1,0 +1,39 @@
+.card{
+    flex: 2;
+    background: $mint;
+    padding: 30px;
+    position: relative;
+    text-align: right;
+
+    h3{
+        font-size: 3rem;
+        padding: 0 0 15px 0;
+        line-height: 120%;
+    }
+
+    strong{
+        padding-top: 20px;
+        display: block;
+    }
+
+    .title{
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+        display: inline-block;
+        color: black;
+        font-style: italic;
+        line-height: 120%;
+    }
+
+    &:after{
+        content: '';
+        width: 30px;
+        height: 30px;
+        border-radius: 40px;
+        background: $mint;
+        border: 15px solid white;
+        position: absolute;
+        bottom: -25px;
+        right: -25px;
+    }
+}

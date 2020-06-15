@@ -1,0 +1,105 @@
+
+.form {
+    background: #FFFFFF;
+    padding: 45px 0;
+}
+
+.form p{
+    text-align: center;
+    font-size: 1.3rem;
+    line-height: 130%;
+}
+
+.tinyletter {
+    width: 95%;
+    max-width: 650px;
+    margin: 40px auto;
+    padding: 19px 15px 40px 19px;
+    display: block;
+    box-sizing: border-box;
+    position: relative;
+    text-align: left;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0 5px 27px rgba(0, 0, 0, .2);
+    line-height: 150%;
+    border: 0 !important;
+}
+
+#tlemail {
+    display: block;
+    margin: 0 10px 0 0;
+    min-width: 200px;
+    padding: 12px 10px 11px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    box-shadow: none;
+}
+
+.tinyletter label {
+    font-size: 1.6em;
+    margin-bottom: 13px;
+    font-weight: 600;
+    width: 100%;
+    text-align: left;  
+    display: block; 
+}
+
+.tinyletter .field-wrap{
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.tinyletter .field-wrap > *{
+    flex: 1; 
+    width: 100%;
+}
+
+@media only screen and (min-width: 600px){
+    .tinyletter .field-wrap{
+        flex-flow: row nowrap;
+    }
+
+    .tinyletter .field-wrap #tlemail{
+        flex: 2;
+    }
+}
+
+#tlesubmit {
+    margin: 0;
+    min-width: 75px;
+    color: #FFFFFF;
+    background-color: #000000;
+    display: inline-block;
+    white-space: nowrap;
+    height: 40px;
+    line-height: 42px;
+    padding: 0 22px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    cursor: pointer;
+    border: 0;
+    border-radius: 4px;
+}
+#tlesubmit:hover {
+    color: #000000;
+    background-color: #00FF97;
+}
+
+.tinyletter small{
+    font-size: .8rem;
+    width: 100%;
+    display: block;
+    clear: both;
+    margin: 5px 0 -20px 0;
+}
+
+
+.form.last{
+    background: #00FF97;
+    width: 100%;
+    max-width: initial;
+    min-height: 40vh;
+}

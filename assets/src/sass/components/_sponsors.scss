@@ -1,0 +1,39 @@
+.sponsors{
+    margin-top: 140px;
+    text-align: center;
+
+    p{
+        display: block;
+        font-size: 1.3rem;
+        text-align: right;
+        padding: 20px 50px;
+    }
+}
+
+.sponsor{
+    width: 200px;
+    background: white;
+    box-shadow: 0 5px 27px rgba(0, 0, 0, .2);
+    padding: 20px;
+    box-sizing: border-box;
+    display: inline-block;
+    border-radius: 10px;
+    margin-top: 15px;
+    transition: all ease .3s;
+
+    &:hover{
+        box-shadow: 0 5px 27px rgba(0, 0, 0, .4);
+        transform: translateY(-10px) rotate( -4deg );
+        background: white;
+    }
+
+    @media only screen and ( prefers-reduced-motion: reduce ){
+        transition: none;
+    }
+    
+    img{
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+}
