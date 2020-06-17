@@ -11,6 +11,7 @@ h2.huge{
     width: 100%;
     text-align: right;
     margin: 0 0 50px 0;
+    padding-right: 15px;
     line-height: 110%;
 
     &.left{
@@ -45,6 +46,7 @@ h2.huge{
     text-align: center;
     display: block;
     margin-bottom: 30px;
+    line-height: 150%;
 
     &:after{
         position: relative;
@@ -52,13 +54,14 @@ h2.huge{
         background: white;
         display: block;
         height: 30px;
+        top: -10px;
         border-top: 4px solid black;
         z-index: 20;
     }
 }
 
 .code-of-conduct{
-    padding-bottom: 60px;
+    padding: 0 15px 60px 15px;
     h3, .title-break{
         margin-top: 30px;
     }
