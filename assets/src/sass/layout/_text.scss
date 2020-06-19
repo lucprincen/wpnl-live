@@ -60,6 +60,13 @@ h2.huge{
     }
 }
 
+p.align-left{
+    text-align: left;
+    ul, li{
+        text-align: left;
+    }
+}
+
 .code-of-conduct{
     padding: 0 15px 60px 15px;
     h3, .title-break{
