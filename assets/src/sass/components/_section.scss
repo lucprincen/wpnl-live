@@ -1,7 +1,15 @@
 .speakers, .sponsors{
     max-width: 100%;
     width: 100%;
+}
+
+.speakers, .sponsors, .content{
     padding-bottom: 40px;
-    margin: 80px 0px 40px 0px;
+    margin: 80px auto 40px auto;
     box-sizing: border-box;
+}
+
+.content{
+    display: flex;
+    flex-flow: column nowrap;
 }

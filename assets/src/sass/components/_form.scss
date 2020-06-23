@@ -1,8 +1,60 @@
 
-.form {
+.form, form{
     background: #FFFFFF;
     padding: 45px 0;
 }
+
+form{
+    label{ display: block;}
+
+    .field{
+        display: flex;
+        flex-flow: column nowrap;
+        margin-bottom: 15px;
+    }
+
+    input, textarea{
+        padding: 5px;
+        font-size: 1.5rem;
+        outline: none;
+
+        &:focus{
+            outline: 3px solid black;
+        }
+        
+        @media only screen and (min-width: 700px ){
+            width: 60%;
+        }
+    }
+    
+    textarea{
+        width: 100%;
+        min-height: 100px;
+    }
+
+    &.apply-to-speak{
+        padding: 15px;
+        background: #eee;
+    }
+
+    .button{
+        background: black;
+        font-size: 1.2rem;
+        text-decoration: underline;
+        color: white;
+        border-radius: 3px;
+        border: 0;
+        width: auto;
+        padding: 14px 28px;
+        cursor: pointer;
+
+        &:hover, &:focus{
+            background: $mint;
+            color: black;
+        }
+    }
+}
+
 
 .form p{
     text-align: center;

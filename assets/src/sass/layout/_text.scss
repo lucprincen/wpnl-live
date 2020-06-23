@@ -20,6 +20,7 @@ h2.huge{
 }
 
 .dot{
+    position: relative;
     width: 20px;
     height: 20px;
     border: 2px solid black;
@@ -28,8 +29,64 @@ h2.huge{
     vertical-align: baseline;
     border-radius: 20px;
     margin: 0 0 -3px -8px;
+
+    &.exclamation{
+
+        &:before{
+            position: absolute;
+            content: '';
+            width: 13px;
+            height: 70px;
+            background: black;
+            top: -75px;
+            left: 12px;
+            transform: rotate(10deg);
+            transition: .3s ease all;
+
+            @media only screen and ( prefers-reduced-motion: reduce ){
+                transition: none;
+            }
+        }
+    }
 }
 
+h2.huge:hover .dot:before{
+    transform: rotate( 0 );
+    left: 2px; 
+}
+
+
+a{
+    color: black;
+    text-decoration: underline;
+    font-weight: bold;
+    display: inline-block;
+    padding: 3px;
+
+    &:hover, &:focus{
+        background: black;
+        color: white;
+    }
+}
+
+
+a.button{
+    background: black;
+    color: white;
+    margin: 3px 0 0 0;
+    padding: 7px 15px;
+    border-radius: 3px;
+    display: inline-block;
+    
+    &:hover{
+        background: $mint;
+        color: black;
+    }
+
+    &.center{
+        margin: 15px auto;
+    }
+}
 
 @media only screen and (min-width: 750px){
     .dot{

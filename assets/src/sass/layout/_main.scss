@@ -3,19 +3,6 @@ main{
     position: relative;
     line-height: 150%;
 
-    a{
-        color: black;
-        text-decoration: underline;
-        font-weight: bold;
-        display: inline-block;
-        padding: 3px;
-
-        &:hover, &:focus{
-            background: black;
-            color: white;
-        }
-    }
-
     &:after{
         content: '';
         width: 150vw;

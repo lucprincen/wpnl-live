@@ -21,6 +21,11 @@
         font-size: 1.2rem;
         padding: 0;
 
+        &.center{
+            display: block;
+            text-align: center;
+        }
+
         @media only screen and (min-width: 500px ){
             padding: 0 50px;
         }
@@ -29,5 +34,9 @@
     a{
         color: black;
         font-weight: bold;
+    }
+
+    &.margin{
+        margin-bottom: 50px;
     }
 }
