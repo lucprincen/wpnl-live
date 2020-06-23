@@ -1,6 +1,14 @@
 .sponsors{
     margin-top: 140px;
     text-align: center;
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+    justify-content: center;
+
+    h2, p{
+        flex: 1 0 100%;
+    }
 
     p{
         display: block;
@@ -18,8 +26,9 @@
     box-sizing: border-box;
     display: inline-block;
     border-radius: 10px;
-    margin-top: 15px;
+    margin: 15px 15px 0 0;
     transition: all ease .3s;
+
 
     &:hover{
         box-shadow: 0 5px 27px rgba(0, 0, 0, .4);
@@ -35,5 +44,16 @@
         max-width: 100%;
         height: auto;
         display: block;
+    }
+
+
+    &.weglot{
+        width: auto;
+        height: 90px;
+
+        img{
+            width: auto;
+            height: 100%;
+        }
     }
 }
