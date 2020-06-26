@@ -2,50 +2,53 @@ extends layouts/layout.pug
 
 //- Head
 block head
-    title WPNL Live - Apply to Speak
+    title WPNL Live - Aanmelden als spreker
 
 //- Main content:
 block content
 
     section.intro.margin
-        h1 Apply to Speak
-        p.center Do you have an interesting story to tell?
+        h1 Aanmelden als spreker
+        p.center Heb jij iets interessants te vertellen?
 
     section.content
-        p. 
-            If you’d like to be a part of one of the next WPNL Live editions, please let us know that you’re interested in speaking!
-            All subjects and suggestions are welcome. We’re looking for talks about content, SEO, development, design and anything that involves creating a successful WordPress website. However, all of the presentations will be in Dutch.
 
-        p If you have no experience in public speaking, there are a couple of people in the organizing team that would love to give you tips and pointers on your talk.
+        p. 
+            Mocht je jezelf geroepen voelen om een presentatie te geven op een van deze gloednieuwe evenementen, 
+            laat dan alsjeblieft van je horen en meld je aan!
+            Alle onderwerpen en suggesties zijn welkom; we zoeken talks over content, SEO, techniek, design en alles wat er komt kijken bij een succesvolle WordPress website. De presentaties zullen allemaal in het Nederlands zijn.
+
+
+        p Mocht je nog helemaal geen ervaring met spreken hebben dan zijn er mensen in de organisatie die je graag zouden willen begeleiden in het geven van je eerste presentatie.
 
     .title-break
-        h2 Please tell us a little bit about yourself...
+        h2 Vertel ons iets over jezelf aub...
 
     section.content
         form(netlify).apply-to-speak
             .field
-                label(for="name") Your name *
+                label(for="name") Je naam *
                 input(type="text" id="name" required)
 
             .field
-                label(for="email") Your e-mail *
+                label(for="email") Je e-mailadres *
                 input(type="email" id="email" required)
 
             .field
-                label(for="twitter") Your twitter username
+                label(for="twitter") Je twitter username
                 input(type="twitter" id="twitter")
 
             .field
-                label(for="experience") Previous public speaking experience
-                small.description (if you have any links to taped versions of previous talks, please provide them)
+                label(for="experience") Presentatieervaring
+                small.description (heb je links naar videos van een van je presentaties? deel ze dan aub!)
                 textarea(id="experience")
 
             .field
-                label(for="talk") Provide a brief description of your talk in english
+                label(for="talk") Waar gaat je presentatie over? 
                 textarea(id="talk" required)
 
             .field
-                label(for="bio") Please provide a short bio of yourself in english
+                label(for="bio") Geef ons een korte bio over jezelf?
                 textarea(id="bio")
 
-            input.button(type="submit" value="Apply to speak at WPNL Live")
+            input.button(type="submit" value="Aanmelden als spreker op WPNL Live")
