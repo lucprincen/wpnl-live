@@ -28,27 +28,27 @@ block content
         form(netlify).apply-to-speak
             .field
                 label(for="name") Je naam *
-                input(type="text" id="name" required)
+                input(type="text" name="name" id="name" required)
 
             .field
                 label(for="email") Je e-mailadres *
-                input(type="email" id="email" required)
+                input(type="email" name="email" id="email" required)
 
             .field
                 label(for="twitter") Je twitter username
-                input(type="twitter" id="twitter")
+                input(type="twitter" name="twitter" id="twitter")
 
             .field
                 label(for="experience") Presentatieervaring
                 small.description (heb je links naar videos van een van je presentaties? deel ze dan aub!)
-                textarea(id="experience")
+                textarea(id="experience" name="experience")
 
             .field
                 label(for="talk") Waar gaat je presentatie over? 
-                textarea(id="talk" required)
+                textarea(id="talk" name="talk" required)
 
             .field
                 label(for="bio") Geef ons een korte bio over jezelf?
-                textarea(id="bio")
+                textarea(id="bio" name="bio")
 
             input.button(type="submit" value="Aanmelden als spreker op WPNL Live")
