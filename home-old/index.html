@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>WPNL Live</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="apple-touch-icon" sizes="180x180" href="/assets/dist/images/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/assets/dist/images/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/assets/dist/images/favicon/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" media="screen" href="/assets/dist/css/main.css">
+</head>
+
+<body>
+	<div class="canvas-container">
+		<canvas id="bg" width="1000" height="600"></canvas>
+	</div>
+	<header>
+		<a class="logo" href="/" title="Home">
+			<img src="/assets/dist/images/logo.svg" />
+		</a>
+		<nav class="menu-container">
+			<ul class="main-menu">
+				<li> <a href="/">Home</a>
+				</li>
+				<li><a href="/editions/">Edities</a>
+				</li>
+				<li> <a href="/community/">Community</a>
+				</li>
+				<li><a href="/call-for-speakers/">Aanmelden als spreker!</a>
+				</li>
+				<li><a href="/code-of-conduct/">Code of Conduct </a>
+				</li>
+			</ul>
+			<button class="toggle-menu"><span class="open"><img src="/assets/dist/images/menu.svg"/><span>MENU</span></span><span class="close"><img src="/assets/dist/images/close.svg"/><span>CLOSE</span></span>
+			</button>
+		</nav>
+	</header>
+	<main role="main">
+		<section class="intro">
+			<h1>De volgende editie van WPNL Live is 24 September!</h1>
+		</section>
+		<section class="form">
+			<p>Onze lightning talks starten om 15u in <strong>Zoom</strong>.</p>
+			<p>Meld je nu aan voor de volgende editie!</p>
+			<form class="tinyletter" action="https://tinyletter.com/wcnl" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/wcnl', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
+				<label for="tlemail">Aanmelden voor WPNL Live!</label>
+				<div class="field-wrap">
+					<input type="text" placeholder="email@example.com" name="email" id="tlemail">
+					<input type="hidden" value="1" name="embed">
+					<input type="submit" value="Aanmelden" id="tlesubmit">
+				</div><small>(<strong>Bonus:</strong>) al onze stoelen zijn op de eerste rij!)</small>
+			</form>
+		</section>
+		<section class="sponsors">
+			<h2 class="huge">Onze Sponsoren<span class="dot"></span></h2>
+			<p>Dankzij <a href="https://yoast.com">Yoast</a>, en <a href="https://weglot.com/">Weglot</a> is WordPress Nederland in staat om deze digital meetups te organiseren! 🎉</p>
+			<a class="sponsor" href="https://yoast.com">
+				<img src="/assets/dist/images/yoast.svg" />
+			</a>
+			<a class="sponsor weglot" href="https://weglot.com">
+				<img src="assets/dist/images/weglot.png">
+			</a>
+		</section>
+	</main>
+	<section class="form last">
+		<p>Weet zeker dat je <strong>niks mist</strong> en <strong>meld je nu aan!</strong>
+		</p>
+		<form class="tinyletter" action="https://tinyletter.com/wcnl" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/wcnl', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
+			<label for="tlemail">Aanmelden voor WPNL Live!</label>
+			<div class="field-wrap">
+				<input type="text" placeholder="email@example.com" name="email" id="tlemail">
+				<input type="hidden" value="1" name="embed">
+				<input type="submit" value="Aanmelden" id="tlesubmit">
+			</div><small>(<strong>Bonus:</strong>) al onze stoelen zijn op de eerste rij!)</small>
+		</form>
+	</section>
+	<script src="/assets/dist/js/easel.min.js"></script>
+	<script src="/assets/dist/js/script.js"></script>
+</body>
+
+</html>

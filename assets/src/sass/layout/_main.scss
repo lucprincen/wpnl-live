@@ -19,3 +19,7 @@ main{
         margin: 0 auto;
     }
 }
+
+.workshop main:after{
+    display: none;
+}

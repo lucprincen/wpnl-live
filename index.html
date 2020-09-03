@@ -13,10 +13,7 @@
 	<link rel="stylesheet" media="screen" href="/assets/dist/css/main.css">
 </head>
 
-<body>
-	<div class="canvas-container">
-		<canvas id="bg" width="1000" height="600"></canvas>
-	</div>
+<body class="workshop">
 	<header>
 		<a class="logo" href="/" title="Home">
 			<img src="/assets/dist/images/logo.svg" />
@@ -39,46 +36,43 @@
 		</nav>
 	</header>
 	<main role="main">
-		<section class="intro">
-			<h1>De volgende editie van WPNL Live is 24 September!</h1>
+		<section class="title">
+			<img class="bg-dots" src="/assets/dist/images/dotted.svg">
+			<div class="container"><strong class="subtitle">WPNL Live presenteert:</strong>
+				<h1>Workshop Online Accessibility </h1>
+				<p>
+					Hoe check je zelf kleurcontrast? Wat is het belang van een goede link en waarom is tabvolgorde belangrijk? Al deze vragen en meer zullen worden beantwoord door <a href="https://level-level.com/team/rian-rietveld/">Rian Rietveld</a> van het <a href="https://a11y-collective.com/">A11y collective</a> tijdens
+					de volgende WPNL Live!
+
+				</p>
+				<img class="rian" src="/assets/dist/images/workshop.png">
+			</div>
 		</section>
-		<section class="form">
-			<p>Onze lightning talks starten om 15u in <strong>Zoom</strong>.</p>
-			<p>Meld je nu aan voor de volgende editie!</p>
-			<form class="tinyletter" action="https://tinyletter.com/wcnl" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/wcnl', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
-				<label for="tlemail">Aanmelden voor WPNL Live!</label>
-				<div class="field-wrap">
-					<input type="text" placeholder="email@example.com" name="email" id="tlemail">
-					<input type="hidden" value="1" name="embed">
-					<input type="submit" value="Aanmelden" id="tlesubmit">
-				</div><small>(<strong>Bonus:</strong>) al onze stoelen zijn op de eerste rij!)</small>
-			</form>
+		<section class="signup">
+			<div class="container">
+				<h2>Deze speciale Workshop-editie van WPNL Live vindt plaats op 24 September!</h2>
+				<p>Aanmelden kan hier! Haast je, want er zijn maar 25 plaatsen.</p>
+				<img class="dots" src="/assets/dist/images/dotted-2.svg">
+				<form class="signup-workshop" netlify method="post">
+					<h3>Schrijf je direct in!</h3>
+					<div class="field">
+						<label for="name">Je naam</label>
+						<input type="text" placeholder="naam" name="naam" id="name">
+					</div>
+					<div class="field">
+						<label for="email">Je e-mailadres</label>
+						<input type="email" placeholder="email@example.com" name="email" id="email">
+					</div><small>(<strong>Bonus:</strong> al onze stoelen zijn op de eerste rij!)</small>
+					<input type="submit" value="Aanmelden" id="submit">
+				</form>
+			</div>
 		</section>
-		<section class="sponsors">
-			<h2 class="huge">Onze Sponsoren<span class="dot"></span></h2>
-			<p>Dankzij <a href="https://yoast.com">Yoast</a>, en <a href="https://weglot.com/">Weglot</a> is WordPress Nederland in staat om deze digital meetups te organiseren! 🎉</p>
-			<a class="sponsor" href="https://yoast.com">
-				<img src="/assets/dist/images/yoast.svg" />
-			</a>
-			<a class="sponsor weglot" href="https://weglot.com">
-				<img src="assets/dist/images/weglot.png">
-			</a>
+		<section class="cta">
+			<div class="container"><strong>Max 25 plaatsen beschikbaar!</strong>
+			</div>
 		</section>
 	</main>
-	<section class="form last">
-		<p>Weet zeker dat je <strong>niks mist</strong> en <strong>meld je nu aan!</strong>
-		</p>
-		<form class="tinyletter" action="https://tinyletter.com/wcnl" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/wcnl', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
-			<label for="tlemail">Aanmelden voor WPNL Live!</label>
-			<div class="field-wrap">
-				<input type="text" placeholder="email@example.com" name="email" id="tlemail">
-				<input type="hidden" value="1" name="embed">
-				<input type="submit" value="Aanmelden" id="tlesubmit">
-			</div><small>(<strong>Bonus:</strong>) al onze stoelen zijn op de eerste rij!)</small>
-		</form>
-	</section>
-	<script src="/assets/dist/js/easel.min.js"></script>
-	<script src="/assets/dist/js/script.js"></script>
+	<script src="/assets/dist/js/menu.js"></script>
 </body>
 
 </html>
