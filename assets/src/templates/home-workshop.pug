@@ -1,0 +1,53 @@
+extends layouts/workshop.pug
+
+//- Head
+block head
+    title WPNL Live
+
+//- Main content:
+block content
+
+    section.title
+        img(src="/assets/dist/images/dotted.svg").bg-dots
+        div.container
+            strong.subtitle WPNL Live presenteert:
+            h1 Workshop Online Accessibility 
+
+            p. 
+                Hoe check je zelf kleurcontrast? Wat is het belang van een goede link en waarom is tabvolgorde belangrijk?
+                Al deze vragen en meer zullen worden beantwoord door <a href="https://level-level.com/team/rian-rietveld/">Rian Rietveld</a> van het <a href="https://a11y-collective.com/">A11y collective</a> tijdens de volgende WPNL Live!
+            
+            img( src="/assets/dist/images/workshop.png").rian
+
+    section.signup
+        div.container
+            h2 Deze speciale Workshop-editie van WPNL Live vindt plaats op 24 September om 15:00 uur!
+            p Aanmelden kan hier! Haast je, want er zijn maar 25 plaatsen.
+            img(src="/assets/dist/images/dotted-2.svg").dots
+            form(netlify="true" name="workshop-signup" method="post").signup-workshop
+                h3 Schrijf je direct in!
+                .field
+                    label(for="name") Je naam
+                    input(type="text" placeholder="naam" name="naam" id="name")
+                .field
+                    label(for="email") Je e-mailadres
+                    input(type="email" placeholder="email@example.com" name="email" id="email")
+                
+                small (<strong>Bonus:</strong> al onze stoelen zijn op de eerste rij!)
+                
+                input(type="submit" value="Aanmelden" id="submit")
+
+    section.cta
+        .container
+            strong Max 25 plaatsen beschikbaar!
+
+
+    section.sponsors
+        h2.huge Onze Sponsoren
+            span.dot
+
+        p Dankzij <a href="https://yoast.com">Yoast</a>, en <a href="https://weglot.com/">Weglot</a> is WordPress Nederland in staat om deze digital meetups te organiseren! 🎉
+        a(href="https://yoast.com").sponsor
+            +icon('yoast')
+        a(href="https://weglot.com").sponsor.weglot
+            img(src="assets/dist/images/weglot.png")

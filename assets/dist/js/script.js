@@ -71,6 +71,12 @@ function init() {
 
     createjs.Ticker.setFPS(1);
 
+    var btn = document.querySelector(".toggle-menu");
+    btn.onclick = function (e) {
+        var menu = document.querySelector(".menu-container")
+        menu.classList.toggle('active');
+    }
+
     //Subscribe to the Tick class. This will call the tick
     //method at a set interval (similar to ENTER_FRAME with
     //the Flash Player)

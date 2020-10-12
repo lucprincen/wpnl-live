@@ -1,0 +1,41 @@
+.columns{
+    display: flex;
+    flex-flow: row wrap;
+    margin: 50px 0 0 0;
+    .column{
+        flex: 1 0 100%;
+        display: flex;
+        flex-flow: column nowrap;
+        padding-right: 30px;
+
+        h2{
+            padding: 0 0 10px 0;
+            text-align: center;
+        }
+
+        p{
+            text-align: left;
+            padding: 10px 0 20px 0;
+        }
+
+        form{
+            margin-top: auto;
+            width: 100%;
+        }
+
+        &:nth-child(even){
+            padding-right: 0;
+        }
+    }
+
+    @media only screen and (min-width:800px){
+        .column{
+            
+            flex: 1;
+        }
+    }
+}
+
+main > section.break-out{
+    max-width: 80%;
+}

@@ -1,0 +1,115 @@
+extends layouts/layout.pug
+
+//- Head
+block head
+    title WPNL Live - Agenda
+
+//- Main content:
+block content
+
+    section.intro
+        h1 Agenda
+        p Hier vind je een overzicht van alle komende en voorgaande edities van WPNL Live
+
+    include elements/schedule.pug
+
+    section.speakers.future
+        h2.huge 26 November
+            span.dot
+
+        p. 
+            Op de laatste editie van WPNL Live in 2020 kunnen we twee sprekers van wereldformaat verwelkomen!
+            Hou de site in de gaten voor meer informatie over hun talks!
+
+        article#marieke
+            img( src="/assets/dist/images/marieke.jpg").avatar
+            .card
+                h3 Marieke van de Rakt
+                h4.title CEO van Yoast
+
+
+        article#francesca.pic-right
+            img( src="/assets/dist/images/francesca.jpg").avatar
+            .card
+                h3 Francesca Marano
+                h4.title WordPress Core Team Lead
+
+    
+    section.speakers
+        h2.huge Vorige edities    
+            span.dot
+
+        .title-break
+            h2 Workshop - 24 September
+        
+        article#rian
+            img( src="/assets/dist/images/rian.jpg").avatar
+            .card
+                h3 Rian Rietveld
+                h4.title Workshop Web Accessibility
+                a(href="https://www.youtube.com/watch?v=-zDB058NDg8").button.
+                    Bekijk Rian's Workshop
+
+        .title-break
+            h2 Sessies - 30 Juli
+
+        article#niels
+            img( src="/assets/dist/images/niels.jpg").avatar
+            .card
+                h3 Niels de Blaauw
+                h4.title Jouw maatschappelijk verantwoorde website (NL)
+                a(href="https://www.youtube.com/watch?v=QGQ4RIAEnQ0").button.
+                    Bekijk Niels z'n Talk
+
+
+        article#bas.pic-right
+            img( src="/assets/dist/images/bas.jpg").avatar
+            .card
+                h3 Sebastiaan van der Lans
+                h4.title "WordProof, Bouwen aan een Betrouwbaar Internet?" (NL)
+                a(href="https://www.youtube.com/watch?v=rNmXWfytDlI").button.
+                    Bekijk Bas z'n Talk
+
+
+        .title-break
+            h2 Sessies - 25 Juni
+
+        article#jessica
+            img( src="/assets/dist/images/jessica.jpg").avatar
+            .card
+                h3 Jessica Risch
+                h4.title Hoe automatiseer je een technische support afdeling? (NL)
+                a(href="https://www.youtube.com/watch?v=5MfZZfuNG0Q").button.
+                    Bekijk Jessica's Talk
+
+
+        article#jaime.pic-right
+            img( src="/assets/dist/images/jaime.jpg").avatar
+            .card
+                h3 Jaime Martinez
+                h4.title "Zoeken binnen WordPress “Is it me you're looking for?" (NL)
+                a(href="https://www.youtube.com/watch?v=M5tsJPk4jso").button.
+                    Bekijk Jaime's Talk
+
+
+        .title-break
+            h2 Sessions - May 28th
+
+        article#pavel
+            img( src="/assets/dist/images/pavel.jpg").avatar
+            .card
+                h3 Pavel Ciorici
+                h4.title "When it's the right time to raise prices and how to keep your customers happy" (EN)
+                a(href="https://www.youtube.com/watch?v=yXI4hIKU-W0").button.
+                    Bekijk Pavel's talk
+
+        article#karin.pic-right
+            img( src="/assets/dist/images/karin.jpg").avatar
+            .card
+                h3 Karin Winters
+                h4.title Juist NU succes met een eigen LMS. (LeerManagementSysteem) (NL)
+                a(href="https://www.youtube.com/watch?v=Oby3G_9zu0I").button.
+                    Bekijk Karin's talk
+
+
+            
