@@ -16,6 +16,7 @@
         p{
             text-align: left;
             padding: 10px 0 20px 0;
+            flex: 1;
         }
 
         form{
@@ -38,4 +39,5 @@
 
 main > section.break-out{
     max-width: 80%;
+    padding-top: 45px;
 }

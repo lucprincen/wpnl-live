@@ -1,12 +1,24 @@
 
 .form, form{
     background: #FFFFFF;
-    padding: 45px 0;
 }
 
-.form.last > p{
-    padding: 0 15px;
+
+.form.last{
+    padding-top: 45px;
+    > p{
+        padding: 0 15px;
+    }
 }
+
+.ml-form-embedContent > p{
+    display: none !important;
+}
+
+.ml-form-successContent h4{
+    font-size: 15px !important;
+}
+
 
 form{
     label{ display: block;}
@@ -66,18 +78,18 @@ form{
     line-height: 130%;
 }
 
-.tinyletter {
-    width: 95%;
-    max-width: 650px;
-    margin: 40px auto;
-    padding: 19px 15px 40px 19px;
+.tinyletter, .embedForm{
+    width: 95% !important;
+    max-width: 650px !important;
+    margin: 40px auto !important;
+    padding: 19px 15px 40px 19px !important;
     display: block;
     box-sizing: border-box;
     position: relative;
     text-align: left;
-    background-color: #FFFFFF;
-    border-radius: 10px;
-    box-shadow: 0 5px 27px rgba(0, 0, 0, .2);
+    background-color: #FFFFFF !important;
+    border-radius: 10px !important;
+    box-shadow: 0 5px 27px rgba(0, 0, 0, .2) !important;
     line-height: 150%;
     border: 0 !important;
 }
