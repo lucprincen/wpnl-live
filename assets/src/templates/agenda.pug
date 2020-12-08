@@ -11,33 +11,34 @@ block content
         h1 Agenda
         p Hier vind je een overzicht van alle komende en voorgaande edities van WPNL Live
 
-    include elements/schedule.pug
-
-    section.speakers.future
-        h2.huge 26 November
+    section.speakers
+        h2.huge Vorige edities    
             span.dot
 
-        p. 
-            Op de laatste editie van WPNL Live in 2020 kunnen we twee sprekers van wereldformaat verwelkomen!
-            Hou de site in de gaten voor meer informatie over hun talks!
 
+        .title-break 
+            h2 Sessiess - 26 November
+
+    
         article#marieke
             img( src="/assets/dist/images/marieke.jpg").avatar
             .card
                 h3 Marieke van de Rakt
-                h4.title CEO van Yoast
+                h4.title Met Content SEO het verschil maken in de zoekmachines!
 
+                a(href="https://www.youtube.com/watch?v=Mls4XwWpLs8").button.
+                    Bekijk Marieke's Talk
+               
 
         article#francesca.pic-right
             img( src="/assets/dist/images/francesca.jpg").avatar
             .card
                 h3 Francesca Marano
-                h4.title WordPress Core Team Lead
+                h4.title A non-technical woman in tech: my path as a WordPress Core contributor
 
-    
-    section.speakers
-        h2.huge Vorige edities    
-            span.dot
+                a(href="https://www.youtube.com/watch?v=H6DQWKxwPok").button.
+                    Check out Francesca's Talk
+
 
         .title-break
             h2 Workshop - 24 September
@@ -49,6 +50,10 @@ block content
                 h4.title Workshop Web Accessibility
                 a(href="https://www.youtube.com/watch?v=-zDB058NDg8").button.
                     Bekijk Rian's Workshop
+
+                a(href="https://www.youtube.com/watch?v=6-1_w2bC7AQ").button.
+                    Bekijk Rian's <br/>
+                    Accessibility review (26-11-2020)
 
         .title-break
             h2 Sessies - 30 Juli
