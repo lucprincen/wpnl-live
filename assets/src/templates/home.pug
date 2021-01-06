@@ -7,19 +7,33 @@ block head
 //- Main content:
 block content
 
-    section.intro
-        h1 We zien jullie weer in 2021!
-        p Blijf de site en onze social media in de gaten houden voor de volgende data!
+    section.intro.title
+        h1 De volgende editie van<br/>WPNL Live is 28 Januari
 
     
-    section.sponsors
-        h2.huge Onze Sponsoren
-            span.dot
+    section.form.break-out
+        p Tijdens de volgende WPNL Live houden we weer twee Tribe Meetings! 
+        p We organiseren twee kringgesprekken. Wil je mee praten? Meld je dan even aan:
 
-        p Dankzij <a href="https://yoast.com">Yoast</a>, en <a href="https://weglot.com/">Weglot</a> is WordPress Nederland in staat om deze digital meetups te organiseren! 🎉
-        a(href="https://yoast.com").sponsor
-            +icon('yoast')
-        a(href="https://weglot.com").sponsor.weglot
-            img(src="assets/dist/images/weglot.png")
-        a(href="https://a11y-collective.com/").sponsor.ally
-            img(src="assets/dist/images/a11y.png")
+        .columns
+            .column
+                h2 Content Creators
+                p. 
+                    Onder leiding van gespreksleidster Yvette Sonneveld gaan we het hebben over
+                    hét ding waar WordPress voor gebouwd is; content publiceren! Of je  nu
+                    wervende marketingteksten schrijft, een blog bijhoud of helemaal gericht bent
+                    op zoekmachine-vriendelijke teksten: wij willen jouw ervaringen horen! 
+
+                include elements/form-tribe-1.pug
+            .column
+                h2 WordPress Agencies
+                p. 
+                    Samen met gespreksleidster Rosanne van Staalduinen wordt er in deze tribe meeting
+                    gekeken naar de toekomst van WordPress Agencies. Hoe groei je als bedrijf? Wat 
+                    houdt het in om personeel aan te nemen? Welke kansen en uitdagingen liggen er
+                    voor de Nederlandse WordPress Agencies in 2021?
+
+                include elements/form-tribe-2.pug
+
+    
+    include elements/schedule.pug
