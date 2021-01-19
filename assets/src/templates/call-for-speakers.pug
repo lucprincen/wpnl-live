@@ -43,13 +43,13 @@ block content
                 small.description (heb je links naar videos van een van je presentaties? deel ze dan aub!)
                 textarea(id="experience" name="experience")
             
-            .field 
-                label(for="date") 
-                select(name="date")
-                    option(value="23-2-2021") Dinsdag 23 februari
-                    option(value="27-5-2021") Donderdag 27 mei
-                    option(value="24-9-2021") Dinsdag 24 augustus
-                    option(value="25-11-2021") Donderdag 25 november
+            .field.date 
+                label(for="date") Wanneer kun je spreken?
+                select(name="date" multiple="true")
+                    option(value="23-2-2021") Dinsdag 23 februari 2021
+                    option(value="27-5-2021") Donderdag 27 mei 2021
+                    option(value="24-9-2021") Dinsdag 24 augustus 2021
+                    option(value="25-11-2021") Donderdag 25 november 2021
 
             .field
                 label(for="talk") Waar gaat je presentatie over? 

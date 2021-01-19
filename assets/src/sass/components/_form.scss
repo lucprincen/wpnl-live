@@ -33,7 +33,7 @@ form{
         margin-bottom: 15px;
     }
 
-    input, textarea{
+    input, textarea, select{
         padding: 5px;
         font-size: 1.5rem;
         outline: none;
@@ -45,6 +45,10 @@ form{
         @media only screen and (min-width: 700px ){
             width: 60%;
         }
+    }
+
+    select{
+        font-size: 1.2rem;
     }
     
     textarea{
