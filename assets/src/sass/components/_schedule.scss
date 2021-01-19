@@ -1,6 +1,22 @@
 .schedule{
     margin: 0 auto;
     border-bottom: 10px solid #000;
+
+    .toggle-schedule{
+        padding: 13px 26px;
+        font-size: 1.2rem;
+        background: $mint;
+        border-radius: 4px;
+        margin: 0 0 50px 20px;
+
+        ~ .small{
+            display: none;
+            margin: -45px 0 50px 20px;
+            &.active{
+                display: block;
+            }
+        }
+    }
 }
 
 .schedule ul{
@@ -8,6 +24,13 @@
     font-size: 1.3rem;
     line-height: 130%;
     padding: 0 15px 30px 15px;
+
+    li.hidden-item{
+        display: none;
+        &.active{
+            display: block;
+        }
+    }
 
 }
 

@@ -71,10 +71,21 @@ function init() {
 
     createjs.Ticker.setFPS(1);
 
+
+    //menu:
     var btn = document.querySelector(".toggle-menu");
     btn.onclick = function (e) {
         var menu = document.querySelector(".menu-container")
         menu.classList.toggle('active');
+    }
+
+    //toggle schedule:
+    var _toggle = document.querySelector(".toggle-schedule");
+    _toggle.onclick = function (e) {
+        var _hidden = document.querySelectorAll('.hidden-item');
+        _hidden.forEach( function( item ){
+            item.classList.toggle('active');
+        });
     }
 
     //Subscribe to the Tick class. This will call the tick
