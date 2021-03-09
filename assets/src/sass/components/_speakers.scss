@@ -1,12 +1,16 @@
 .speakers{
-    border-bottom: 10px solid #eee;
-
     &.future p{
         max-width: 600px;
         display: block;
         margin: 10px auto 40px auto;
     }
 }
+
+.speakers + .signup{
+    border-bottom: 10px solid #eee;
+    margin-bottom: 50px;
+}
+
 
 .speakers article{
     display: flex;

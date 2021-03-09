@@ -1,0 +1,28 @@
+extends layouts/layout.pug
+
+//- Head
+block head
+    title WPNL Live - Aanmelden als sponsor
+
+//- Main content:
+block content
+
+    section.intro.margin
+        h1 Apply as a sponsor
+        p.center Reach hundreds of WordPress people on a montly basis?
+
+    section.content
+        form(netlify).apply-to-sponsor
+            .field
+                label(for="name") Your name *
+                input(type="text" name="name" id="name" required)
+
+            .field
+                label(for="email") Your e-mailaddress *
+                input(type="email" name="email" id="email" required)
+
+            .field
+                label(for="company") Your company name *
+                input(type="company" name="company" id="company" required)
+
+            input.button(type="submit" value="Contact me about sponsoring WPNL Live")

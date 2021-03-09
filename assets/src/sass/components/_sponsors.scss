@@ -67,3 +67,32 @@
     }
     
 }
+
+
+.call-for-sponsors{
+    max-width: 700px;
+    margin: 40px auto;
+    text-align: center;
+
+    h2{
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    h2, h4, p{
+        text-align: center;
+    }
+
+    .button{
+        margin: 15px auto;
+        padding: 20px 40px;
+        font-size: 1.5rem;
+        background: $mint;
+        color: black;
+
+        &:hover{
+            background: black;
+            color: white;
+        }
+    }
+}
