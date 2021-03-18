@@ -11,18 +11,27 @@ block content
         h1 Apply as a sponsor
         p.center Reach hundreds of WordPress people on a montly basis?
 
-    section.content
-        form(netlify).apply-to-sponsor
-            .field
-                label(for="name") Your name *
-                input(type="text" name="name" id="name" required)
+    section.content.columns
+        .column
+            form(netlify).apply-to-sponsor
+                .field
+                    label(for="name") Your name *
+                    input(type="text" name="name" id="name" required)
 
-            .field
-                label(for="email") Your e-mailaddress *
-                input(type="email" name="email" id="email" required)
+                .field
+                    label(for="email") Your e-mailaddress *
+                    input(type="email" name="email" id="email" required)
 
-            .field
-                label(for="company") Your company name *
-                input(type="company" name="company" id="company" required)
+                .field
+                    label(for="company") Your company name *
+                    input(type="company" name="company" id="company" required)
 
-            input.button(type="submit" value="Contact me about sponsoring WPNL Live")
+                input.button(type="submit" value="Contact me about sponsoring WPNL Live")
+        .sponsor-package.column
+            h3 Our sponsor package: 
+            ul 
+                li Your brand in our newsletter, including 2 links to posts or job offers.
+                li We show your logo during our WPNLLive meetup.
+                li We mention your brand during the in- and outros of the digital meetup.
+                li Costs: €150 per meetup (contact us if you'd like to sponsor more)
+            

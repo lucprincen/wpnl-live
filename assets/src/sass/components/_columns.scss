@@ -1,7 +1,7 @@
 .columns{
     display: flex;
     flex-flow: row wrap;
-    margin: 50px 0 0 0;
+    margin-top: 50px;
     .column{
         flex: 1 0 100%;
         display: flex;
@@ -40,4 +40,21 @@
 main > section.break-out{
     max-width: 80%;
     padding-top: 45px;
+}
+
+.sponsor-package{
+    background: #f8f8f8;
+    padding: 15px;
+
+    h3{
+        padding: 10px 0 20px 0;
+    }
+
+    ul{
+        margin: 0 0 0 10px;
+        padding: 10px 20px 10px 10px;
+        li{
+            padding: 0 0 10px 0;
+        }
+    }
 }
